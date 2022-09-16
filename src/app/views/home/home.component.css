@@ -1,0 +1,111 @@
+
+/* DESKTOP FIRST ( 992px até o infinito )*/
+
+/* ***************** PRODUTOS/JOGOS ***************** */
+/* section produtos */
+.produtos {
+    width: 100%;
+    height: 600px;
+    background-color: brown;
+
+    background-image: url(/assets/images/banner_pilotos.png);
+    background-repeat: no-repeat;
+    /* background-size: 100%; */
+}
+
+.produtos .banner-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 600px;
+}
+
+.produtos .banner-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 350px;
+    height: 270px;
+    color: white;
+    /* border: 1px solid white; */
+}
+
+.produtos .banner-info h1 {
+    font-family: "TitilliumWeb-Regular";
+    font-size: 42px;
+    text-align: center;
+
+}
+
+.produtos .banner-info p {
+    font-family: "Roboto-Light";
+    text-align: center;
+    font-size: 18px;
+
+}
+
+.produtos .banner-info a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 200px;
+    height: 50px;
+    font-family: "Roboto-Light";
+    background-color: #C31616;
+
+    border: 1px solid #C31616;
+    border-radius: 10px;
+
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+/* ***************JOGOS**************** */
+/* section jogos (produtos) */
+.jogos {
+    background-color: #1E1C21;
+}
+.jogos .ofertas {
+    font-family: "TitilliumWeb-Regular";
+    color: white;
+    padding: 20px 0;
+}
+.jogos .card {
+    max-width: 250px;
+    margin-bottom: 20px;
+    font-family: "Roboto-Thin";
+    color: white;
+    background-image: linear-gradient(to bottom, #1E1C21, #2a2a2c);
+}
+
+.jogos .card .card-title {
+    font-size: 1.5rem;
+    font-family: "Roboto-Light";
+    text-transform: uppercase;
+}
+.jogos .card .btn-buy {
+    width: 100%;
+    font-family: "Roboto-Light";
+    background-color: #C31616;
+    text-transform: uppercase;
+}
+
+
+/* TABLETS < 992px (768px  até 991px)  */
+@media screen and (max-width: 991px) {
+   
+}
+
+/* SMARTPHONES  < 768 (0 até 767px)*/
+@media screen and (max-width: 767px) {
+    
+}

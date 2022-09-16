@@ -1,0 +1,103 @@
+Introdução
+
+Bibliotecas vs Frameworks
+
+Bibliotecas
+	jQuery, jQuery Mask
+	ReactJS (Web), React Native (Apps - Nativo)
+
+Frameworks
+	Angular (Web), Ionic (Apps - Webview)
+	Vue JS, Bootstrap
+	
+Quem Utiliza o Angular
+	Google, Netflix, Paypal
+
+SPA - Single Page Application (ganha performance)
+
+Angular JS e Angular 2
+
+Componente
+	<a class="btn btn-primary"> xpto </a>
+	HTML, CSS e JS
+____________________________________________
+Política de segurança powershell
+https://paulosantanna.com/2012/10/14/habilitando-a-execucao-de-scripts-powershell/
+
+Instalação do Angular
+	* Angular - Node é a base
+	* Instalar o angular cli 
+		(npm i -g @angular/cli)
+		https://angular.io/cli (ng --version)
+	* Criar um projeto Angular HelloWorld
+		ng new [NomeDoProjeto]
+			confirmar o roteamento do angular (y)
+			confirmar o formato do CSS (css azul)
+	* Entrar na pasta do projeto (cd []nome-do-projeto)
+	* Rodar o projeto 
+		(ng serve)
+		(ng serve -o)
+
+Componente Angular
+	Template - HTML - app.component.html estrutura
+	Estilo - TS - app.component.css estilização
+	comportamento - TS - app.component.ts Super JS
+	teste automatizado - app.component.spec.ts
+
+_______________________________________________
+
+Estrutura de pastas do projeto
+	src
+		assets - recursos fixos do projeto
+		components - componentes reutilizáveis (header, footer)
+		views - componentes de telas
+		services - interação com apis
+		models - modelos de dados da aplicação
+
+
+Criar um componente
+	ng generate component [nome]
+	ng generate component components/header 
+
+
+PARA IMPORTAR O E-PLAYER
+	importar o html e o css
+	colocar as fontes, css e js na pasta assets
+	colocar o arquivo js dentro do angular.json
+	instalar o Bootstrap via npm e importar o css e o js do Bootstrap	
+		de dentro da pasta dist... para dentro do angular.json (scripts e styles -build)
+		
+
+criar um model - ng generate class [nome-da-classe]
+	** criar as propriedades email e password dentro do constructor dessa classe - User.ts	
+		constructor(
+			public email?: string,
+			public password?:string
+    	){}
+
+	** Criar a variável que instancia/representa o model - dentro de login.component.ts
+	** Criar a método/função que receba os dados do form - login.component.ts
+		userModel = new User()
+
+		receberDados() {
+			console.log(this.userModel);
+			
+		}
+
+
+	** Fazer o binding dos campos com o model - login.component.html
+		[(ngModel)="userModel.email"] name="email"
+		[(ngModel)="userModel.password"] name="password"
+
+	** Implementar o evento de submit no formuário e chamar a função receberDados() - login.component.html
+		(ngSubmit)="receberDados()" - dentro do form
+	
+	** Deixar o botão signin como type-"submit"
+
+
+
+
+
+
+
+

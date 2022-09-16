@@ -1,0 +1,118 @@
+/* ***************** HEADER ***************** */
+header {
+    height: 80px;
+    background-color: black;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+header .logo {
+    width: 280px;
+    /* border: 2px solid white; */
+}
+
+/* navbar */
+header .menu {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    max-width: 680px;
+    /* border: 2px solid red; */
+}
+
+header .menu a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: "Roboto-Light", sans-serif;
+    font-weight: 300;
+}
+
+header .menu-bar {
+    display: none;
+}
+
+/* ESPECIFICIDADE CSS: https://developer.mozilla.org/pt-BR/docs/Web/CSS/Specificity */
+.mostraMenu {
+    left: 0 !important;
+    opacity: 0.98 !important;
+}
+
+/* **********************RESPONSIVIDADE DO HEADER ***************************** */
+
+
+/* TABLETS < 992px (768px  até 991px)  */
+@media screen and (max-width: 991px) {
+    header {
+        padding: 0 20px;
+    }
+
+    /* navbar container flex*/
+    header .menu {
+        position: fixed;/* fixa o elemento baseado na viewoport */
+        top: 0;
+        left: -80%;/* inicialmente escondido */
+        z-index: 100; /* controla a camada do elemento com position */
+
+
+        opacity: 0;/*inicialmente invisível*/
+        width: 80%;
+        height: 100vh;
+
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #C31616;
+        color: white;
+
+        border-radius: 0 0 0 80px;
+
+        transition: left 0.5s, opacity 0.6s;
+    }
+
+    /* links dos menu itens do flex */
+    header .menu a {
+        border-left: 3px dotted lightgray;
+        width: 80%;
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+        padding: 20px;
+        color: lightgrey;
+    }
+
+    /* menu hamburger */
+    header .menu-bar {
+        display: block;
+        width: 45px;
+    }
+}
+
+/* SMARTPHONES  < 768 (0 até 767px)*/
+@media screen and (max-width: 767px) {
+    header .logo {
+        width: 200px;
+    }
+
+    /* navbar */
+    header .menu {
+
+        border-radius: 0 0 0 60px;
+    }
+
+    header .menu a {
+        border-left: 2px dotted lightgray;
+        font-size: 1rem;
+        padding: 10px;
+    }
+
+    header .menu-bar {
+        width: 30px;
+    }
+}

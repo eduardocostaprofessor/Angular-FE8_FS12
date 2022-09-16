@@ -1,0 +1,26 @@
+<div class="container container-personalizado">
+    <form action="" class="form-login" (ngSubmit)="receberDados()">
+        <div class="linha">
+            <label for="">Login</label>
+            <input type="email" id="email" placeholder="Seu e-mail" name="email" [(ngModel)]="userModel.email">
+        </div>
+
+        <div class="linha">
+            <label for="">Senha</label>
+            <input type="password" id="senha" placeholder="****" [(ngModel)]="userModel.password" name="password">
+        </div>
+
+        <div class="linha btn-actions">
+            <button type="submit" id="signin" class="btn btn-danger">Signin</button>
+            <button type="button" class="btn btn-link" (click)="teste()">Register</button>
+        </div>
+
+        <div class="linha">
+            <p>
+                {{userModel.email}} <br>
+                {{userModel.password}}
+            </p>
+        </div>
+    </form>
+    
+</div>

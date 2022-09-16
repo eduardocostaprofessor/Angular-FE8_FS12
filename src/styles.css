@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+/* import de fontes */
+/* 
+
+    Utilizar o Dev Tools
+
+    Responsividade
+    Bootstrap
+
+
+*/
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url(/assets/fonts/Roboto/Roboto-Thin.ttf);
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url(/assets/fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: "TitilliumWeb-Regular";
+    src: url(/assets/fonts/Titillium_Web/TitilliumWeb-Regular.ttf);
+}
+
+
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto-Light", sans-serif;
+    background-color: black;
+    color: white;
+}
+
+
+.container-gid {
+    max-width: 1200px;
+    margin: 0 auto;
+    /* border: 1px solid salmon; */
+}
+
+
+/* CUSTOMIZAÇÃO DO BOOTSTRAP */
+/* .container, .container-fluid, .container-gid {
+    border: 1px solid red;
+}
+.mostra-coluna {
+    border: 2px solid green;
+} */
+
+.container {
+    max-width: 1200px;
+}
