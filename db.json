@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$QXbp4ZH052CTiecSO.8U4.X2./TeyuFN/47lwS14eXbmogMfzLUtG",
+      "id": 1
+    },
+    {
+      "email": "eduardo.costa@edu.com",
+      "password": "$2a$10$2Wai.fHODM.J8Jb9smplJO2dDc7gMJKNhzgjzXqrbbl1KqDBme7U2",
+      "id": 2
+    },
+    {
+      "email": "edu@edu.com",
+      "password": "$2a$10$8UaaD4ZXdDfY1shx/0RtZ.3fElGiqIEbODiN5r/0NEeNCre9kWbwW",
+      "id": 3
+    }
+  ]
+}

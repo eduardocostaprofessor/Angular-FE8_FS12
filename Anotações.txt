@@ -96,6 +96,25 @@ criar um model - ng generate class [nome-da-classe]
 
 
 
+	********************CONSUMO DE API********************
+
+	** CARREGAR O MÓDULO http client module *SERVICE* INSTALAR O INSOMNIA - app.module.ts
+
+	** CRIAR O SERVICE - CONFIGURAR O SERVICE/REQUISIÇÃO - service.ts
+		ng generate service [caminho/nome]
+		Carregar o módulo httpClient no construtor (private httpClient: HttpClient) - injeção de dependência
+		Criar a variável de rota na classe UserService
+		Criar a função post de login - logarUsuario
+
+	** CRIAR A FUNCIONALIDADE DE LOGIN (SEND) -  login.component.ts
+		Carregar o UserService no construtor da classe - (private userService: UserService )
+		Disparar a função de logarUsuario dentro nossa função receberDados() - no vídeo da aula 
+		Configurar as mensagens de sucesso e erro no login.component.ts e .html  conforme o vídeo da aula
+		
+
+
+
+
 
 
 
