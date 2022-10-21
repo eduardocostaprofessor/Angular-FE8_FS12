@@ -2,7 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from '@angular/common/http';//import do http client
 import { User } from '../models/user';//import do model User
-import { Observable } from 'rxjs'; //requisições assíncronas
+import { Observable } from 'rxjs';
+
 
 @Injectable({
   providedIn: 'root'
